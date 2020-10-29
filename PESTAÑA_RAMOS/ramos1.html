@@ -42,7 +42,7 @@
   </div>
 </nav>
 <section>
-  <article> <img src="IMAGENES_RAMOS/ramo1.jpg" alt="ramo2"> </article>
+  <article> <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="IMAGENES_RAMOS/ramo1.jpg" alt="ramo2"> </article>
   <aside>
     Ramo de flores de la leche pa to los gustos jejejej ete sech
     <div class="input-group input-group-sm">
@@ -54,7 +54,7 @@
 </section>
 
 <section>
-  <article> <img src="IMAGENES_RAMOS/ramo2.jpg" alt="ramo2"> </article>
+  <article> <img src="IMAGENES_RAMOS/ramo2.jpg" onmouseover="bigImg(this)" onmouseout="normalImg(this)" alt="ramo2"> </article>
   <aside> Perdona si pregunto por como te encuentras
       Pero me han comentado que te han visto sola
       Llorando por las calles en altas horas
@@ -102,6 +102,18 @@
 <audio autoplay loop>
     <source  src="musica_ramos.mp3" type="audio/mp3">
 </audio>
+
+<script>
+function bigImg(x) {
+  x.style.height = "400px";
+  x.style.width = "400px";
+}
+
+function normalImg(x) {
+  x.style.height = "250px";
+  x.style.width = "250px";
+}
+</script>
 
 </body>
 </html>
